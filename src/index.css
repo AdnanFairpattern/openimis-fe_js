@@ -80,7 +80,7 @@ body {
 }
 
 .App>div {
-  min-height: 70px;
+  min-height: 72px;
   margin-top: 0;
 }
 
@@ -115,8 +115,8 @@ header .MuiToolbar-gutters {
 }
 
 .MuiDrawer-root .MuiDrawer-paperAnchorDockedLeft {
-  height: calc(100% - 70px);
-  top: 70px;
+  height: calc(100% - 72px);
+  top: 72px;
 }
 
 nav.jss12 .MuiDrawer-root .MuiDrawer-paperAnchorDockedLeft {
@@ -179,16 +179,13 @@ nav.jss12 .MuiDrawer-root .MuiDrawer-paperAnchorDockedLeft {
   fill: #FFF;
 }
 
-.MuiCollapse-root .MuiList-root,
-.MuiCollapse-root .MuiAccordionDetails-root {
+.MuiCollapse-root .MuiAccordionDetails-root, .MuiCollapse-root .MuiList-root {
+  background: #f5f6fa;
   padding: 0;
-  background: #F5F6FA;
-  padding-left: 8px;
 }
-
 .MuiCollapse-root .MuiListItem-button {
   border-bottom: 1px solid rgba(0, 0, 0, .1);
-  padding: 10px 15px;
+  padding: 10px 30px;
 }
 
 .MuiCollapse-root .MuiSvgIcon-root {
@@ -473,6 +470,8 @@ label + .MuiInput-formControl {
 
 .MuiPaper-root .MuiGrid-container {
   padding: 0;
+  width: 100%;
+  min-height: 71px;
 }
 
 /* .MuiPaper-root .MuiGrid-container .MuiGrid-item {
@@ -602,16 +601,28 @@ box-shadow: 0px 1px 2px rgba(25,39,52,0.05),0px 0px 4px rgba(25,39,52,0.1);
 .MuiInputBase-root .MuiAutocomplete-endAdornment {
   top: 0
 }
+
 .proverty_status {
   margin-top: 16px;
 }
+
 .insuree_icon svg{
   height: 100px;
   width: 100px;
 }
-.Breadcrumbs a{
+
+.Breadcrumbs a {
   padding-left: 6px;
 }
-.Breadcrumbs a:hover{
+
+.Breadcrumbs a:hover {
   text-decoration: none;
+}
+
+.App > main {
+  padding-right: 72px;
+}
+
+header + nav + nav + div + main {
+  padding-left: 300px;
 }
